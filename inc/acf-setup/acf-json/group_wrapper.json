@@ -1,0 +1,124 @@
+{
+    "key": "group_5fabbc71c4ca0",
+    "title": "Обертка",
+    "fields": [
+        {
+            "key": "field_5fabbcbd782c4",
+            "label": "Тэг обертки",
+            "name": "wrapper_tag",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "section": "Section",
+                "header": "Header",
+                "footer": "Footer",
+                "div": "Div",
+                "article": "Article",
+                "main": "Main"
+            },
+            "default_value": "section",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_1756731471166",
+            "label": "H1 блок?",
+            "name": "is_h1",
+            "type": "true_false",
+            "instructions": "Включить если это первый блок на странице (h1 hero section)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_1757584977862",
+            "label": "Заголовок H1",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                {
+                    "field": "field_1756731471166",
+                    "operator": "==",
+                    "value": "1"
+                }
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        },
+        {
+          "key": "field_1757584869777",
+          "label": "Рейтинг у заголовка",
+          "name": "rating",
+          "type": "number",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": [
+              {
+                  "field": "field_1756731471166",
+                  "operator": "==",
+                  "value": "1"
+              }
+          ],
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "4.8",
+          "placeholder": "4.8",
+          "prepend": "",
+          "append": "",
+          "min": 0,
+          "max": 5,
+          "step": "0.1"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/wrapper"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1683710533
+}

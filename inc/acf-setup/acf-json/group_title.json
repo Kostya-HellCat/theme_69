@@ -1,0 +1,79 @@
+{
+  "key": "group_title",
+  "title": "Title",
+  "fields": [
+    {
+        "key": "field_1742559175536",
+        "label": "Тэг заголовка",
+        "name": "title_tag",
+        "type": "select",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+            "width": "10",
+            "class": "",
+            "id": ""
+        },
+        "choices": {
+            "h1": "h1",
+            "h2": "h2",
+            "h3": "h3",
+            "h4": "h4",
+            "p": "p",
+            "div": "div",
+            "b": "b"
+        },
+        "default_value": "h2",
+        "allow_null": 0,
+        "multiple": 0,
+        "ui": 0,
+        "return_format": "value",
+        "ajax": 0,
+        "placeholder": ""
+    },
+    {
+        "key": "field_1742559166571",
+        "label": "Заголовок",
+        "name": "title",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+            "width": "40",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "tabs": "text",
+        "media_upload": 0,
+        "toolbar": "full",
+        "delay": 0
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/toc"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/winners"
+      }
+    ]
+  ],
+  "menu_order": 2,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": ""
+}

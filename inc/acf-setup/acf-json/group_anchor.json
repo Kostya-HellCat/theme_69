@@ -1,0 +1,99 @@
+{
+  "key": "group_anchors",
+  "title": "Anchor",
+  "fields": [
+    {
+        "key": "field_1742558753982",
+        "label": "Anchor",
+        "name": "anchor",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "prepend": "#",
+        "wrapper": {
+            "width": "20",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "tabs": "text",
+        "media_upload": 0,
+        "toolbar": "full",
+        "delay": 0
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/wrapper"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/game"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/winners"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/table"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/pros-and-cons"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/listing"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/faq"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/screenshots"
+      }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/slots"
+      }
+    ]
+  ],
+  "menu_order": 1,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": ""
+}

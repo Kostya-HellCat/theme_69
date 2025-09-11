@@ -1,0 +1,127 @@
+{
+    "key": "group_winners",
+    "title": "Топ Winners",
+    "fields": [
+        {
+          "key": "field_1756811047100",
+          "label": "Количество элементов для вывода",
+          "name": "count",
+          "type": "number",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "20",
+            "class": "",
+            "id": ""
+          },
+          "default_value": 3,
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "min": 0,
+          "max": 0,
+          "step": "1"
+        },
+        {
+            "key": "field_1756811105355",
+            "label": "Валюта",
+            "name": "currency",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "10",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "$",
+            "tabs": "text",
+            "media_upload": 0,
+            "toolbar": "full",
+            "delay": 0
+        },
+        {
+            "key": "field_1757595149861",
+            "label": "Маскировать ники победителей?",
+            "name": "hide_names",
+            "type": "true_false",
+            "instructions": "Если включить - ники будут вида: Nick***12",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+          "key": "field_1756811124425",
+          "label": "Диапазон выигрыша",
+            "name": "range",
+            "type": "group",
+            "sub_fields": [
+                {
+                    "key": "field_64f7f3a1c1111",
+                    "label": "От",
+                    "name": "min",
+                    "type": "number",
+                    "min": 0,
+                    "max": 999999
+                },
+                {
+                    "key": "field_64f7f3a1c2222",
+                    "label": "До",
+                    "name": "max",
+                    "type": "number",
+                    "min": 0,
+                    "max": 999999
+                }
+            ]
+        },
+        {
+            "key": "field_1756811314230",
+            "label": "Список имен победителей",
+            "name": "names",
+            "type": "textarea",
+            "instructions": "Список имен победителей указанных через запятую. Должен быть больше чем количество выводимых блоков. (из них случайно будут выбираться имена и обновляться вместе с суммой выигрыша раз в день) <br>Что бы очистить кэш - удалите список ников и сохраните страницу.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/winners"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1683710533
+}

@@ -1,0 +1,119 @@
+{
+  "key": "group_author",
+  "title": "Вывод автора",
+  "fields": [
+    {
+      "key": "field_5fe9c2c80bdd4",
+      "label": "Выберите автора",
+      "name": "choose_author",
+      "type": "user",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "40",
+        "class": "",
+        "id": ""
+      },
+      "role": "",
+      "allow_null": 0,
+      "multiple": 0,
+      "return_format": "id"
+    },
+    {
+        "key": "field_1756889692092",
+        "label": "Стиль",
+        "name": "style",
+        "type": "select",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+            "width": "40",
+            "class": "",
+            "id": ""
+        },
+        "choices": {
+            "h1": "Стиль для h1 блока (Written by, Last updated)",
+            "page": "Стиль для статьи (инфо об авторе, рейтинг)"
+        },
+        "default_value": "",
+        "allow_null": 0,
+        "multiple": 0,
+        "ui": 0,
+        "return_format": "value",
+        "ajax": 0,
+        "placeholder": ""
+    },
+    {
+      "key": "field_1756889981131",
+      "label": "Рейтинг",
+      "name": "rating",
+      "type": "number",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": [
+          {
+              "field": "field_1756889692092",
+              "operator": "==",
+              "value": "page"
+          }
+      ],
+      "wrapper": {
+        "width": "10",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "4.8",
+      "placeholder": "4.8",
+      "prepend": "",
+      "append": "",
+      "min": 0,
+      "max": 5,
+      "step": "0.1"
+    },
+    {
+        "key": "field_1756890006509",
+        "label": "Текст",
+        "name": "text",
+        "type": "textarea",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": [
+          {
+            "field": "field_1756889692092",
+            "operator": "==",
+            "value": "page"
+          }
+        ],
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "maxlength": "",
+        "rows": "",
+        "new_lines": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/author"
+      }
+    ]
+  ],
+  "menu_order": 5,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "modified": 1609155981
+}
