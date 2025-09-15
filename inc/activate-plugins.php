@@ -18,25 +18,25 @@ function my_acf_settings_dir( $dir ) {
 include_once( get_stylesheet_directory() . '/inc/plugins/acf/acf.php' );
 
 # TGMPA
-include_once(get_stylesheet_directory() . '/inc/plugins/TGMPA/class-tgm-plugin-activation.php');
-
-add_action('tgmpa_register', function() {
-    $plugins = [
-        [
-            'name' => 'Table Field Add-on for ACF and SCF',
-            'slug' => 'advanced-custom-fields-table-field',
-            'required' => true,
-        ],
-    ];
-
-    $config = [
-        'id' => 'theme67',
-        'default_path' => '',
-        'menu' => 'tgmpa-install-plugins',
-        'has_notices' => true,
-        'dismissable' => false,
-        'is_automatic' => true,
-    ];
-
-    tgmpa($plugins, $config);
-});
+//include_once(get_stylesheet_directory() . '/inc/plugins/TGMPA/class-tgm-plugin-activation.php');
+//
+//add_action('tgmpa_register', function() {
+//    $plugins = [
+//        [
+//            'name' => 'Table Field Add-on for ACF and SCF',
+//            'slug' => 'advanced-custom-fields-table-field',
+//            'required' => true,
+//        ],
+//    ];
+//
+//    $config = [
+//        'id' => 'theme67',
+//        'default_path' => '',
+//        'menu' => 'tgmpa-install-plugins',
+//        'has_notices' => true,
+//        'dismissable' => false,
+//        'is_automatic' => true,
+//    ];
+//
+//    tgmpa($plugins, $config);
+//});

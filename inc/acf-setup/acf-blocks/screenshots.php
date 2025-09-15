@@ -12,7 +12,7 @@
 <?php endif; ?>
 
     <?php if ( !empty($screenshots) ): ?>
-        <ul class="gallery">
+        <ul class="gallery js-scroll-list">
             <?php foreach ( $screenshots as $file ): ?>
                 <?php
                     $image_url = is_plugin_active( 'webp-express/webp-express.php' ) ? str_replace(['.png','.jpg','.jpeg'], '.webp', $file['url']) : $file['url'] ;

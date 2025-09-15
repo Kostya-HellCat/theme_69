@@ -42,20 +42,18 @@
                         ];
                     ?>
                     <li class="how-to__item">
-                        <?= get_image( $item['image']['id'] ) ?>
-                        <div class="how-to__item-content" data-text="<?= $lang_content['step'] ?? "Step" ?>">
+                        <div class="how-to__item-col">
                             <?php if ( !empty($item['title']) ): ?>
-                                <p class="how-to__item-title"><?= $item['title'] ?></p>
+                                <h3 class="how-to__item-title"><?= $item['title'] ?></h3>
                             <?php endif; ?>
                             <?php if ( !empty($item['text']) ): ?>
                                 <p class="how-to__item-descr"><?= $item['text'] ?></p>
                             <?php endif; ?>
                             <?php if ( !empty($item['button']) ): ?>
-                                <button class="btn sf-link btn--primary btn--m" data-sf-a="<?= $item['button']['url'] ?>">
-                                    <?= $item['button']['title'] ?>
-                                </button>
+                                <button class="btn sf-link btn--primary" data-sf-a="<?= $item['button']['url'] ?>"><?= $item['button']['title'] ?></button>
                             <?php endif; ?>
                         </div>
+                        <?= get_image( $item['image']['id'] ) ?>
                     </li>
                 <?php endforeach; ?>
             </<?= $tag ?>>

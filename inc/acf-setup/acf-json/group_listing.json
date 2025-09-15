@@ -65,6 +65,25 @@
                 "delay": 0
             },
             {
+              "key": "field_1tit7925733654",
+              "label": "Заголовок бонуса",
+              "name": "bonus_title",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "text",
+              "media_upload": 0,
+              "toolbar": "full",
+              "delay": 0
+            },
+            {
                 "key": "field_1748600283584",
                 "label": "Текст бонуса",
                 "name": "bonus_text",
@@ -145,7 +164,47 @@
               "max_height": "",
               "max_size": "",
               "mime_types": ""
-            }
+            },
+            {
+            "key": "field_1757933656723",
+            "label": "Преимущества",
+            "name": "advantages",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+              {
+                "key": "field_1757933664571",
+                "label": "Текст",
+                "name": "text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "tabs": "text",
+                "media_upload": 0,
+                "toolbar": "full",
+                "delay": 0
+              }
+            ]
+          }
         ]
     }
   ],

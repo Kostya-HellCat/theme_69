@@ -1721,7 +1721,8 @@ svg {
     pointer-events: none;
 }
 
-.table.js-scroll-list {
+.table.js-scroll-list,
+.wp-block-table{
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
@@ -1729,46 +1730,54 @@ svg {
     -ms-overflow-style: none;
     margin-top: 20px;
 }
-.table.js-scroll-list::-webkit-scrollbar {
+.table.js-scroll-list::-webkit-scrollbar,
+.wp-block-table::-webkit-scrollbar
+{
     width: 0;
     height: 0;
     display: none;
 }
-.table.js-scroll-list:first-child {
+.table.js-scroll-list:first-child,
+.wp-block-table:first-child
+{
     margin-top: 0;
 }
 @media (max-width: 575.9px) {
-    .table.js-scroll-list {
+    .table.js-scroll-list,
+    .wp-block-table
+    {
         margin-top: 16px;
     }
 }
-.table.js-scroll-list table {
+.table.js-scroll-list table,
+.wp-block-table table {
     table-layout: auto;
     min-width: 500px;
     white-space: nowrap;
 }
-.table.js-scroll-list table td:last-child {
+.table.js-scroll-list table td:last-child,
+.wp-block-table table td:last-child
+{
     text-align: unset;
 }
 
-table:not([class]),
-table.wp-block-table {
+table:not([class]) {
     table-layout: fixed;
 }
 table:not([class]) thead tr td:first-child,
 table:not([class]) thead tr th:first-child,
-table.wp-block-table thead tr td:first-child,
-table.wp-block-table thead tr th:first-child {
+.wp-block-table table thead tr td:first-child,
+.wp-block-table table thead tr th:first-child {
     border-radius: 8px 0 0 8px;
 }
 table:not([class]) thead tr td:last-child,
 table:not([class]) thead tr th:last-child,
-table.wp-block-table thead tr td:last-child,
-table.wp-block-table thead tr th:last-child {
+.wp-block-table table thead tr td:last-child,
+.wp-block-table table thead tr th:last-child {
     border-radius: 0 8px 8px 0;
 }
 table:not([class]) thead tr th,
-table.wp-block-table thead tr th {
+.wp-block-table table thead tr th {
     text-align: left;
     background: var(--accent-secondary, #eff8ff);
     color: var(--text-main, #2b2b2b);
@@ -1778,38 +1787,37 @@ table.wp-block-table thead tr th {
 }
 table:not([class]) tbody tr:nth-of-type(even) td:first-child,
 table:not([class]) tbody tr:nth-of-type(even) th:first-child,
-table.wp-block-table tbody tr:nth-of-type(even) td:first-child,
-table.wp-block-table tbody tr:nth-of-type(even) th:first-child {
+.wp-block-table table tbody tr:nth-of-type(even) td:first-child,
+.wp-block-table table tbody tr:nth-of-type(even) th:first-child {
     border-radius: 8px 0 0 8px;
 }
 table:not([class]) tbody tr:nth-of-type(even) td:last-child,
 table:not([class]) tbody tr:nth-of-type(even) th:last-child,
-table.wp-block-table tbody tr:nth-of-type(even) td:last-child,
-table.wp-block-table tbody tr:nth-of-type(even) th:last-child {
+.wp-block-table table tbody tr:nth-of-type(even) td:last-child,
+.wp-block-table table tbody tr:nth-of-type(even) th:last-child {
     border-radius: 0 8px 8px 0;
 }
 table:not([class]) tbody tr:nth-of-type(even) td,
-table.wp-block-table tbody tr:nth-of-type(even) td {
+.wp-block-table table tbody tr:nth-of-type(even) td {
     background: var(--card-secondary-bg, #f9f9f9);
 }
 table:not([class]) th,
 table:not([class]) td,
-table.wp-block-table th,
-table.wp-block-table td {
+.wp-block-table table th,
+.wp-block-table table td {
     padding: 16px;
 }
 table:not([class]) td,
-table.wp-block-table td {
+.wp-block-table table td {
     color: var(--text-secondary, #6b6b6b);
 }
 table:not([class]) td:first-child,
-table.wp-block-table td:first-child {
+.wp-block-table table td:first-child {
     color: var(--text-main, #2b2b2b);
     font-weight: 500;
 }
 @media (max-width: 575.9px) {
-    table:not([class]) td:last-child,
-    table.wp-block-table td:last-child {
+    table:not([class]) td:last-child {
         text-align: right;
     }
 }

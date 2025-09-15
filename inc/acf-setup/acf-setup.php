@@ -114,6 +114,19 @@ add_action( 'acf/init', function () {
 	] );
 
     acf_register_block_type( [
+        'name'            => 'text-image',
+        'title'           => 'Text Image',
+        'description'     => 'Блок с текстом и картинкой',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/text-image.php',
+        'category'        => 'container-blocks',
+        'icon'            => 'carrot',
+        'mode'            => 'preview',
+        'supports'        => [
+            'jsx'   => true
+        ]
+    ] );
+
+    acf_register_block_type( [
         'name'            => 'Sidebar',
         'title'           => 'Sidebar',
         'description'     => 'Sidebar',
@@ -165,6 +178,26 @@ add_action( 'acf/init', function () {
         'icon' => 'carrot',
         'mode' => 'edit'
     ] );
+
+    acf_register_block_type( [
+        'name' => 'bonuses',
+        'title' => 'Бонусы',
+        'description' => 'Вывод списка бонусов',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/bonuses.php',
+        'category' => 'hand-made-blocks',
+        'icon' => 'carrot',
+        'mode' => 'edit'
+    ] );
+
+    acf_register_block_type( [
+        'name' => 'button',
+        'title' => 'Кнопка',
+        'description' => 'Пользовательская кнопка',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/button.php',
+        'category' => 'hand-made-blocks',
+        'icon' => 'carrot',
+        'mode' => 'edit'
+    ] );
 //
 //    acf_register_block_type( [
 //        'name' => 'table',
@@ -186,32 +219,32 @@ add_action( 'acf/init', function () {
 //        'mode'            => 'edit'
 //    ] );
 //
-//    acf_register_block_type( [
-//        'name'            => 'listing',
-//        'title'           => 'Листинг',
-//        'description'     => 'Листинг',
-//        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/listing.php',
-//        'category'        => 'hand-made-blocks',
-//        'icon'            => 'carrot',
-//        'mode'            => 'edit'
-//    ] );
-//
-//    acf_register_block_type( [
-//        'name'            => 'screenshots',
-//        'title'           => 'Screenshots',
-//        'description'     => 'Блок со скриншотами',
-//        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/screenshots.php',
-//        'category'        => 'container-blocks',
-//        'icon'            => 'carrot',
-//        'mode'            => 'edit',
-//        'enqueue_assets'  => function () {
-//            wp_enqueue_style('screenshot_gallery_styles', get_template_directory_uri() . '/inc/libs/glightbox.min.css');
-//            wp_enqueue_script('screenshot_gallery_scripts', get_template_directory_uri() . '/inc/libs/glightbox.min.js', false, null, false);
-//            wp_enqueue_script('init_screenshot_gallery', get_template_directory_uri() .'/build/js/gallery.js', [], null, false);
-//        },
-//
-//    ] );
-//
+    acf_register_block_type( [
+        'name'            => 'listing',
+        'title'           => 'Листинг',
+        'description'     => 'Листинг',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/listing.php',
+        'category'        => 'hand-made-blocks',
+        'icon'            => 'carrot',
+        'mode'            => 'edit'
+    ] );
+
+    acf_register_block_type( [
+        'name'            => 'screenshots',
+        'title'           => 'Screenshots',
+        'description'     => 'Блок со скриншотами',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/screenshots.php',
+        'category'        => 'container-blocks',
+        'icon'            => 'carrot',
+        'mode'            => 'edit',
+        'enqueue_assets'  => function () {
+            wp_enqueue_style('screenshot_gallery_styles', get_template_directory_uri() . '/inc/libs/glightbox.min.css');
+            wp_enqueue_script('screenshot_gallery_scripts', get_template_directory_uri() . '/inc/libs/glightbox.min.js', false, null, false);
+            wp_enqueue_script('init_screenshot_gallery', get_template_directory_uri() .'/build/js/gallery.js', [], null, false);
+        },
+
+    ] );
+
     acf_register_block_type( [
         'name'            => 'game',
         'title'           => 'Демка (игра)',
@@ -251,17 +284,17 @@ add_action( 'acf/init', function () {
 //        'icon'            => 'carrot',
 //        'mode'            => 'edit'
 //    ] );
-//
-//
-//	acf_register_block_type( [
-//		'name'            => 'how-to',
-//		'title'           => 'How to',
-//		'description'     => 'How to',
-//		'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/how-to.php',
-//		'category'        => 'text-blocks',
-//		'icon'            => 'carrot',
-//		'mode'            => 'edit'
-//	] );
+
+
+	acf_register_block_type( [
+		'name'            => 'how-to',
+		'title'           => 'How to',
+		'description'     => 'How to',
+		'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/how-to.php',
+		'category'        => 'text-blocks',
+		'icon'            => 'carrot',
+		'mode'            => 'edit'
+	] );
 
     acf_register_block_type( [
         'name' => 'author',

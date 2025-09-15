@@ -85,7 +85,35 @@
         "param": "block",
         "operator": "==",
         "value": "acf\/slots"
-      }
+      },
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf\/bonuses"
+        }
+      ],
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf\/text-image"
+        }
+      ],
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf\/listing"
+        }
+      ],
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf\/screenshots"
+        }
+      ]
     ]
   ],
   "menu_order": 1,
