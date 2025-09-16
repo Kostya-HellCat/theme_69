@@ -198,27 +198,7 @@ add_action( 'acf/init', function () {
         'icon' => 'carrot',
         'mode' => 'edit'
     ] );
-//
-//    acf_register_block_type( [
-//        'name' => 'table',
-//        'title' => 'Кастомная таблица',
-//        'description' => 'Различные вариации вывода таблицы',
-//        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/table.php',
-//        'category' => 'hand-made-blocks',
-//        'icon' => 'carrot',
-//        'mode' => 'edit'
-//    ] );
-//
-//    acf_register_block_type( [
-//        'name'            => 'image',
-//        'title'           => 'Картинка',
-//        'description'     => 'Пользовательская картинка с разметкой и опциями',
-//        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/image.php',
-//        'category'        => 'hand-made-blocks',
-//        'icon'            => 'carrot',
-//        'mode'            => 'edit'
-//    ] );
-//
+
     acf_register_block_type( [
         'name'            => 'listing',
         'title'           => 'Листинг',
@@ -254,17 +234,7 @@ add_action( 'acf/init', function () {
         'icon'            => 'carrot',
         'mode'            => 'edit'
     ] );
-//
-//    acf_register_block_type( [
-//        'name' => 'slot-info',
-//        'title' => 'Информация о слоте',
-//        'description' => 'Информация о слоте',
-//        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/slot-info.php',
-//        'category' => 'hand-made-blocks',
-//        'icon' => 'carrot',
-//        'mode' => 'edit'
-//    ] );
-//
+
     acf_register_block_type( [
         'name' => 'slots',
         'title' => 'Слоты',
@@ -274,16 +244,16 @@ add_action( 'acf/init', function () {
         'icon' => 'carrot',
         'mode' => 'edit'
     ] );
-//
-//    acf_register_block_type( [
-//        'name'            => 'faq',
-//        'title'           => 'FAQ',
-//        'description'     => 'FAQ',
-//        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/faq.php',
-//        'category'        => 'text-blocks',
-//        'icon'            => 'carrot',
-//        'mode'            => 'edit'
-//    ] );
+
+    acf_register_block_type( [
+        'name'            => 'faq',
+        'title'           => 'FAQ',
+        'description'     => 'FAQ',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/faq.php',
+        'category'        => 'text-blocks',
+        'icon'            => 'carrot',
+        'mode'            => 'edit'
+    ] );
 
 
 	acf_register_block_type( [
@@ -305,17 +275,37 @@ add_action( 'acf/init', function () {
         'icon' => 'carrot',
         'mode' => 'edit'
     ] );
-//
-//
-//    acf_register_block_type( [
-//        'name'            => 'pros-and-cons',
-//        'title'           => 'Плюсы и минусы',
-//        'description'     => 'Плюсы и минусы',
-//        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/pros-and-cons.php',
-//        'category'        => 'text-blocks',
-//        'icon'            => 'carrot',
-//        'mode'            => 'edit'
-//    ] );
+
+    acf_register_block_type( [
+        'name' => 'symbol-cards',
+        'title' => 'Текстовые карточки',
+        'description' => 'Текстовые карточки',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/symbol-cards.php',
+        'category' => 'hand-made-blocks',
+        'icon' => 'carrot',
+        'mode' => 'edit'
+    ] );
+
+    acf_register_block_type( [
+        'name' => 'banner',
+        'title' => 'Банер',
+        'description' => 'Банер>',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/banner.php',
+        'category' => 'hand-made-blocks',
+        'icon' => 'carrot',
+        'mode' => 'edit'
+    ] );
+
+
+    acf_register_block_type( [
+        'name'            => 'pros-and-cons',
+        'title'           => 'Плюсы и минусы',
+        'description'     => 'Плюсы и минусы',
+        'render_template' => get_template_directory() . '/inc/acf-setup/acf-blocks/pros-and-cons.php',
+        'category'        => 'text-blocks',
+        'icon'            => 'carrot',
+        'mode'            => 'edit'
+    ] );
 
 
 } );

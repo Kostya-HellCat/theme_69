@@ -113,6 +113,20 @@
           "operator": "==",
           "value": "acf\/screenshots"
         }
+      ],
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf\/symbol-cards"
+        }
+      ],
+      [
+        {
+          "param": "block",
+          "operator": "==",
+          "value": "acf\/banner"
+        }
       ]
     ]
   ],

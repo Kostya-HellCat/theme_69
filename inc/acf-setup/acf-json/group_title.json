@@ -66,6 +66,13 @@
         "operator": "==",
         "value": "acf\/winners"
       }
+    ],
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf\/banner"
+      }
     ]
   ],
   "menu_order": 2,
